@@ -33,6 +33,7 @@
 @import "../node_modules/bootstrap/scss/card";
 @import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/placeholders";
+@import "../node_modules/bootstrap/scss/list-group";
 
 
 
@@ -44,6 +45,7 @@
 @import "./components/image-control";
 @import "./components/font-family";
 @import "./components/btn-style";
+@import "./components/utilities";
 
 
 // Layout
@@ -91,5 +93,25 @@ footer {
     object-fit: cover;
     @include media-breakpoint-up(sm) { 
         height: 288px;
+    }
+}
+
+// items
+
+.transform {
+    transform: translate(10px);
+    transition: all 0.3s;
+}
+
+.list-hide {
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.items-name-show {
+    opacity: 0;
+    transition: opacity 0.3s;
+    &:hover {
+        opacity: 1;
     }
 }
