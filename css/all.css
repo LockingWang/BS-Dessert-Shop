@@ -8510,6 +8510,11 @@ textarea.form-control-lg {
   background-position: center center;
 }
 
+.img-fit {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .font-f-kalam {
   font-family: "Kalam", cursive;
 }
@@ -8554,4 +8559,16 @@ footer {
 }
 .link-hover:hover {
   color: pink;
+}
+
+.process-banner {
+  height: 215px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 576px) {
+  .process-banner {
+    height: 288px;
+  }
 }/*# sourceMappingURL=all.css.map */

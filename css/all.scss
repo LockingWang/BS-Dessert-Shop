@@ -82,3 +82,14 @@ footer {
         color: $secondary;
     }
 }
+
+// Process
+
+.process-banner {
+    height: 215px;
+    width: 100%;
+    object-fit: cover;
+    @include media-breakpoint-up(sm) { 
+        height: 288px;
+    }
+}
