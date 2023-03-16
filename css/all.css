@@ -8950,4 +8950,8 @@ footer {
 }
 .items-name-show:hover {
   opacity: 1;
+}
+
+.form-border {
+  border-top: 5px solid #cca44b;
 }/*# sourceMappingURL=all.css.map */

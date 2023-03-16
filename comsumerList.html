@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zn-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂購 - 津賀家</title>
+
+    <!-- 連結圖示 & 簡介 -->
+    <link rel="apple-tough-icon" href="./images/cake-icon.png" />
+    <link rel="shortcut icon" href="./images/cake-icon.png" />
+    <meta name="description" content="Bootstrap 5 Final Work - CongRen Wang" />
+
+    <meta property="og:title" content="津賀家甜點 - CongRen" />
+    <meta property="og:description" content="Bootstrap 5 Final Work - CongRen Wang">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image" content="./images/cake-icon.png" />
+
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/all.css">
+    
+</head>
+<body style="background-image: url(./images/lightpaperfibers.png);">
+
+    <nav class="navbar navbar-expand-lg bg-white py-3 px-5 position-fixed fixed-top">
+        <div class="container-fluid">
+          <h1 class="mb-0"><a class="navbar-brand bg-img d-block text-indent" href="index.html" style="background-image: url(./images/LOGO.png); width: 130px; height: 60px;">津賀家甜品</a></h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="導覽列開關按鈕">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item mx-2 w-100 w-lg-auto w-lg-auto">
+                <a class="nav-link nav-hover border-bottom rounded-pill px-4" aria-current="page" href="index.html">首頁</a>
+              </li>
+              <li class="nav-item mx-2 w-100 w-lg-auto">
+                <a class="nav-link nav-hover border-bottom rounded-pill px-4" href="#">如何購買</a>
+              </li>
+              <li class="nav-item mx-2 w-100 w-lg-auto">
+                <a class="nav-link nav-hover border-bottom rounded-pill px-4" href="#">熱門商品</a>
+              </li>
+              <li class="nav-item mx-2 w-100 w-lg-auto mb-3 mb-lg-0">
+                <a class="nav-link nav-hover border-bottom rounded-pill px-4" href="#">食材介紹</a>
+              </li>
+              <li class="nav-item mx-2 w-100 w-lg-auto">
+                <a class="nav-link btn btn-secondary rounded-pill px-5 w-100 w-lg-auto" href="#">前往訂購</a>
+              </li>
+          </div>
+        </div>
+    </nav>
+
+    <!-- main content start -->
+    <main style="margin-top: 92px;">
+
+      <div class="container">
+        <div class="row justify-content-center py-5">
+          <form class="col-lg-8 form-border shadow bg-white rounded py-5 px-4 needs-validation" action="#" novalidate>
+            
+            <h3 class="text-center mb-5">填寫訂購資訊</h3>
+    
+            <div class="row g-3">
+              <div class="col-lg-6">
+                <label for="user-name" class="form-label">名字</label>
+                <input type="text" class="form-control" id="user-name" placeholder="雅婷" required>
+                <div class="valid-feedback">
+                  Good!
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <label for="user-firstName" class="form-label">姓氏</label>
+                <input type="text" class="form-control" id="user-firstName" placeholder="蔡" required>
+                <div class="valid-feedback">
+                  Good!
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="user-phone" class="form-label">手機號碼</label>
+                <input type="tel" class="form-control" id="user-phone" placeholder="0900-111-222" required>
+                <div class="invalid-feedback">
+                  請輸入您的手機號碼。
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="user-email" class="form-label">電子郵件</label>
+                <input type="email" class="form-control" id="user-email" placeholder="abc@gmail.com" required>
+                <div class="invalid-feedback">
+                  請輸入您的電子郵件信箱。
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="user-address" class="form-label">收件地址</label>
+                <div class="row g-1">
+                  <div class="col-lg-6">
+                    <select class="form-select" id="free-time" required>
+                      <option selected disabled value="">請選擇城市</option>
+                      <option value="Tainan">台南</option>
+                      <option value="Kaohsiung">高雄</option>
+                      <option value="Pingtung">屏東</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      請選擇城市。
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <select class="form-select" id="free-time" required>
+                      <option selected disabled value="">請選擇區域</option>
+                      <option value="OO">圈圈區</option>
+                      <option value="XX">叉叉區</option>
+                      <option value="Center">蛋黃區</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      請選擇一個區域。
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control" id="user-address" placeholder="XX路XX號" required>
+                  </div>
+                </div>
+                <div class="invalid-feedback">
+                  請輸入您的居住地址。
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="free-time" class="form-label">付款方式</label>
+                <select class="form-select" id="free-time" required>
+                  <option selected disabled value="">請選擇...</option>
+                  <option value="LINE">LINE PAY</option>
+                  <option value="Street">街口支付</option>
+                  <option value="Credit">信用卡</option>
+                </select>
+                <div class="invalid-feedback">
+                  請選擇支付方式。
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="user-address" class="form-label">購買品項</label>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bg-primary" id="bigBread">核桃乳酪大麵包</span>
+                      <input type="number" class="form-control" placeholder="0" aria-label="bread-number" aria-describedby="bigBread">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bg-primary" id="rainbowCake">彩虹蜂蜜蛋糕</span>
+                      <input type="number" class="form-control" placeholder="0" aria-label="rainbowCake-number" aria-describedby="rainbowCake">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bg-primary" id="strewberryCake">草莓戀人小蛋糕</span>
+                      <input type="number" class="form-control" placeholder="0" aria-label="strewberryCake-number" aria-describedby="strewberryCake">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bg-primary" id="macaron">莓果白雪馬卡龍</span>
+                      <input type="number" class="form-control" placeholder="0" aria-label="macaron-number" aria-describedby="macaron">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <p class="form-label">加購</p>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <input class="form-check-input me-2" type="checkbox" value="clean-house" id="clean-house">
+                    <label class="form-check-label me-5" for="clean-house">
+                      生日蠟燭+100
+                    </label>
+                  </div>
+                  <div class="col-lg-4">
+                    <input class="form-check-input me-2" type="checkbox" value="massage" id="massage">
+                    <label class="form-check-label me-5" for="massage">
+                      塑膠餐具+50
+                    </label>
+                  </div>
+                  <div class="col-lg-4">
+                    <input class="form-check-input me-2" type="checkbox" value="private-talk" id="private-talk">
+                    <label class="form-check-label me-5" for="private-talk">
+                      金箔+150
+                    </label>
+                  </div>
+                </div>
+    
+                
+    
+                
+              </div>
+              <div class="col-12">
+                <label for="user-text" class="form-label">備註說明</label>
+                <textarea class="form-control" name="user-text" id="user-text" rows="3"></textarea>
+              </div>
+              <div class="col-12">
+                <h2 class="text-primary font-f-kalam text-center fw-bold py-3">總金額 1,090 NTD</h2>
+                <button class="btn btn-primary w-100 fs-5" type="submit">確認訂單</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </main>
+    <!-- main content end -->
+
+    <section class="bg-white py-5 footer-border-top">
+      <div class="container">
+        <div class="row justify-content-center g-3">
+          <div class="col-md-4">
+            <div class="row align-items-center h-md-100">
+              <div class="col-md-6 text-center">
+                <img class="img-fluid" src="./images/footer-contact-us.png" alt="donut-img">
+              </div>
+              <div class="col-md-6 h-md-100 d-flex flex-column text-center text-md-start">
+                <h3 class="fw-bold">開放加盟</h3>
+                <p class="text-primary">適合也想開甜點店的你~</p>
+                <a href="#" class="btn btn-outline-primary rounded-pill mt-auto">聯絡我們</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row align-items-center h-md-100">
+              <div class="col-md-6 text-center">
+                <img class="img-fluid" src="./images/footer-shop-link.png" alt="cup-coffee-img">
+              </div>
+              <div class="col-md-6 h-md-100  d-flex flex-column text-center text-md-start">
+                <h3 class="fw-bold">立即選購</h3>
+                <p class="text-primary">無論是早餐、點心或嘴饞的時候來一口，都適合喔!</p>
+                <a href="#" class="btn btn-outline-primary rounded-pill mt-auto">訂單連結</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <p class="text-white text-center py-3 mb-0">Copyright © 2023 王琮仁.All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/all.js"></script>
+</body>
+</html>
